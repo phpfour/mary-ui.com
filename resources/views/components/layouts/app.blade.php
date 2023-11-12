@@ -27,27 +27,27 @@
     <meta property="twitter:image" content="https://mary-ui.com/mary-banner.png">
 
     {{-- Flatpickr --}}
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
-    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/pt.js"></script>
-    <script src="https://npmcdn.com/flatpickr/dist/l10n/fr.js"></script>
+    <link rel="stylesheet" href="{{ asset("libs/flatpickr/flatpickr.min.css") }}">
+    <script src="{{ asset("libs/flatpickr/flatpickr.min.js") }}" defer></script>
+    <script src="{{ asset("libs/flatpickr/pt.js") }}" defer></script>
+    <script src="{{ asset("libs/flatpickr/fr.js") }}" defer></script>
 
     {{-- Vanilla Calendar --}}
-    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar@2.6.2/build/vanilla-calendar.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar@2.6.2/build/themes/light.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar@2.6.2/build/themes/dark.min.css" rel="stylesheet">
-    <script src="https://cdn.jsdelivr.net/npm/@uvarov.frontend/vanilla-calendar@2.6.2/build/vanilla-calendar.min.js" defer></script>
+    <link rel="stylesheet" href="{{ asset("libs/calendar/vanilla-calendar.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("libs/calendar/light.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("libs/calendar/dark.min.css") }}">
+    <script src="{{ asset("libs/calendar/vanilla-calendar.min.js") }}" defer></script>
 
     {{-- DIFF2HTML --}}
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.1/styles/github.min.css" />
-    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/diff2html/bundles/css/diff2html.min.css" />
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/diff2html/bundles/js/diff2html-ui.min.js"></script>
+    <link rel="stylesheet" href="{{ asset("libs/diff2html/github.min.css") }}">
+    <link rel="stylesheet" href="{{ asset("libs/diff2html/diff2html.min.css") }}">
+    <script src="{{ asset("libs/diff2html/diff2html-ui.min.js") }}" defer></script>
 
     {{-- Chart.js  --}}
-    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
+    <script src="{{ asset("libs/chartjs/chart.umd.min.js") }}" defer></script>
 
     {{--  Currency  --}}
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/robsontenorio/mary@0.44.2/libs/currency/currency.js"></script>
+    <script src="{{ asset("libs/currency/currency.js") }}" defer></script>
 
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
